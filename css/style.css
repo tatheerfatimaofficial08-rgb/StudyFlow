@@ -1,0 +1,901 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+    color: #1f2d3d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: white;
+    border-bottom: 1px solid #dfe6ee;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2f5d8a;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #394b5f;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2f5d8a;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 8%;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.small-heading {
+    color: #2f5d8a;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 550px;
+}
+
+.start-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2f5d8a;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.start-button:hover {
+    background-color: #244b70;
+}
+
+.hero-card {
+    width: 38%;
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.12);
+}
+
+.hero-card h2 {
+    margin-bottom: 22px;
+    color: #2f5d8a;
+}
+
+.plan-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f7fb;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    color: #455568;
+}
+.tasks-page {
+    padding: 60px 8%;
+}
+
+.tasks-heading {
+    margin-bottom: 35px;
+}
+
+.tasks-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.tasks-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.task-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.task-form,
+.task-list-section {
+    background-color: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+}
+
+.task-form {
+    width: 40%;
+}
+
+.task-list-section {
+    width: 60%;
+    min-height: 300px;
+}
+
+.task-form h2,
+.task-list-section h2 {
+    margin-bottom: 20px;
+    color: #2f5d8a;
+}
+
+.task-form input,
+.task-form select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.task-form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2f5d8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #244b70;
+}
+
+.empty-message {
+    color: #94a3b8;
+    text-align: center;
+    padding-top: 70px;
+}
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f7fb;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 9px;
+    border-left: 5px solid #2f5d8a;
+}
+
+.task-card h3 {
+    margin-bottom: 7px;
+    color: #1f2d3d;
+}
+
+.task-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.delete-button {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #b52a37;
+}
+.timetable-page {
+    padding: 60px 8%;
+}
+
+.timetable-heading {
+    margin-bottom: 35px;
+}
+
+.timetable-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.timetable-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.table-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th,
+td {
+    padding: 18px 14px;
+    text-align: center;
+    border: 1px solid #dfe6ee;
+}
+
+th {
+    background-color: #2f5d8a;
+    color: white;
+    font-size: 15px;
+}
+
+td {
+    background-color: #f8fafc;
+    color: #455568;
+}
+
+tbody tr:hover td {
+    background-color: #eef4fa;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #2f5d8a;
+    background-color: #f1f5f9;
+}
+
+.break-cell {
+    background-color: #e7eff7;
+    color: #2f5d8a;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.notes-page {
+    padding: 60px 8%;
+}
+
+.notes-heading {
+    margin-bottom: 35px;
+}
+
+.notes-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.notes-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.notes-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.notes-editor,
+.saved-notes-section {
+    background-color: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+}
+
+.notes-editor {
+    width: 55%;
+}
+
+.saved-notes-section {
+    width: 45%;
+    min-height: 420px;
+}
+
+.notes-editor input,
+.notes-editor textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.notes-editor input {
+    margin-bottom: 15px;
+}
+
+.notes-editor textarea {
+    min-height: 250px;
+    resize: vertical;
+}
+
+.notes-info {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.notes-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.notes-buttons button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#saveNoteButton {
+    background-color: #2f5d8a;
+    color: white;
+}
+
+#saveNoteButton:hover {
+    background-color: #244b70;
+}
+
+#downloadNoteButton {
+    background-color: #e7eff7;
+    color: #2f5d8a;
+}
+
+#downloadNoteButton:hover {
+    background-color: #d8e5f2;
+}
+
+.saved-notes-section h2 {
+    margin-bottom: 20px;
+    color: #2f5d8a;
+}
+
+.saved-note-card {
+    background-color: #f4f7fb;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border-left: 5px solid #2f5d8a;
+}
+
+.saved-note-card h3 {
+    margin-bottom: 8px;
+    color: #1f2d3d;
+}
+
+.saved-note-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.note-actions {
+    margin-top: 12px;
+}
+
+.note-actions button {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.gpa-page {
+    padding: 60px 8%;
+}
+
+.gpa-heading {
+    margin-bottom: 35px;
+}
+
+.gpa-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.gpa-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.gpa-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.gpa-form,
+.gpa-result-section {
+    background-color: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+}
+
+.gpa-form {
+    width: 40%;
+}
+
+.gpa-result-section {
+    width: 60%;
+    min-height: 420px;
+}
+
+.gpa-form h2,
+.gpa-result-section h2 {
+    margin-bottom: 20px;
+    color: #2f5d8a;
+}
+
+.gpa-form input,
+.gpa-form select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.gpa-form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2f5d8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gpa-form button:hover {
+    background-color: #244b70;
+}
+
+.gpa-result-card {
+    background-color: #2f5d8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.gpa-result-card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.gpa-result-card h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.course-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f7fb;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border-left: 5px solid #2f5d8a;
+}
+
+.course-card h3 {
+    margin-bottom: 6px;
+    color: #1f2d3d;
+}
+
+.course-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.course-card button {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.about-page {
+    padding: 60px 8%;
+}
+
+.about-heading {
+    margin-bottom: 35px;
+}
+
+.about-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.about-heading p {
+    color: #64748b;
+    font-size: 17px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+}
+
+.about-card h2 {
+    color: #2f5d8a;
+    margin-bottom: 16px;
+}
+
+.about-card p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.about-card ul {
+    padding-left: 20px;
+    color: #64748b;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.technology-list span {
+    background-color: #e7eff7;
+    color: #2f5d8a;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.student-card {
+    border-left: 6px solid #2f5d8a;
+}
+
+.student-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2d3d !important;
+    margin-bottom: 8px;
+}
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero-text,
+    .hero-card {
+        width: 100%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .task-container,
+    .notes-container,
+    .gpa-container {
+        flex-direction: column;
+    }
+
+    .task-form,
+    .task-list-section,
+    .notes-editor,
+    .saved-notes-section,
+    .gpa-form,
+    .gpa-result-section {
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-card {
+        padding: 20px;
+    }
+
+    .tasks-page,
+    .timetable-page,
+    .notes-page,
+    .gpa-page,
+    .about-page {
+        padding: 40px 5%;
+    }
+
+    .tasks-heading h1,
+    .timetable-heading h1,
+    .notes-heading h1,
+    .gpa-heading h1,
+    .about-heading h1 {
+        font-size: 32px;
+    }
+
+    .task-form,
+    .task-list-section,
+    .notes-editor,
+    .saved-notes-section,
+    .gpa-form,
+    .gpa-result-section,
+    .about-card {
+        padding: 20px;
+    }
+
+    .task-card,
+    .course-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .notes-buttons {
+        flex-direction: column;
+    }
+
+    .notes-buttons button {
+        width: 100%;
+    }
+}
+
+.theme-button {
+    border: none;
+    background-color: #2f5d8a;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.theme-button:hover {
+    background-color: #244b70;
+}
+
+.dark-mode {
+    background-color: #17212b;
+    color: #f1f5f9;
+}
+
+.dark-mode .navbar {
+    background-color: #1f2d3d;
+    border-bottom-color: #334155;
+}
+
+.dark-mode .logo,
+.dark-mode nav a,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #f1f5f9;
+}
+
+.dark-mode nav a:hover {
+    color: #8fb4d9;
+}
+
+.dark-mode .hero-description,
+.dark-mode .tasks-heading p,
+.dark-mode .timetable-heading p,
+.dark-mode .notes-heading p,
+.dark-mode .gpa-heading p,
+.dark-mode .about-heading p,
+.dark-mode .about-card p,
+.dark-mode .about-card li {
+    color: #cbd5e1;
+}
+
+.dark-mode .hero-card,
+.dark-mode .task-form,
+.dark-mode .task-list-section,
+.dark-mode .table-container,
+.dark-mode .notes-editor,
+.dark-mode .saved-notes-section,
+.dark-mode .gpa-form,
+.dark-mode .gpa-result-section,
+.dark-mode .about-card {
+    background-color: #1f2d3d;
+}
+
+.dark-mode .plan-item,
+.dark-mode .task-card,
+.dark-mode .saved-note-card,
+.dark-mode .course-card {
+    background-color: #27384a;
+    color: #f1f5f9;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+    background-color: #27384a;
+    color: #f1f5f9;
+    border-color: #475569;
+}
+
+.dark-mode td {
+    background-color: #27384a;
+    color: #f1f5f9;
+}
+
+.dark-mode td:first-child {
+    background-color: #223044;
+    color: #8fb4d9;
+}
+
+.dark-mode tbody tr:hover td {
+    background-color: #32465c;
+}
+
+.dark-mode .break-cell {
+    background-color: #32465c;
+    color: #b9d3ec;
+}
+.pomodoro-section {
+    padding: 20px 8% 70px;
+}
+
+.pomodoro-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(47, 93, 138, 0.10);
+}
+
+.pomodoro-card h2 {
+    margin-bottom: 20px;
+    color: #2f5d8a;
+}
+
+.timer-display {
+    font-size: 64px;
+    font-weight: bold;
+    color: #1f2d3d;
+    margin: 25px 0;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.timer-buttons button {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#startTimerButton {
+    background-color: #2f5d8a;
+    color: white;
+}
+
+#pauseTimerButton {
+    background-color: #e7eff7;
+    color: #2f5d8a;
+}
+
+#resetTimerButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.timer-message {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.dark-mode .pomodoro-card {
+    background-color: #1f2d3d;
+}
+
+.dark-mode .timer-display,
+.dark-mode .pomodoro-card h2 {
+    color: #f1f5f9;
+}
+
+.dark-mode .timer-message {
+    color: #cbd5e1;
+}

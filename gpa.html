@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GPA Calculator - StudyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">StudyFlow</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notes.html">Notes</a>
+            <a href="gpa.html">GPA</a>
+            <a href="about.html">About</a>
+        </nav>
+        <button id="themeButton" class="theme-button">
+    Dark Mode
+</button>
+    </header>
+
+    <main class="gpa-page">
+
+        <section class="gpa-heading">
+            <p class="small-heading">GPA CALCULATOR</p>
+
+            <h1>Calculate Your GPA</h1>
+
+            <p>
+                Add your courses, credit hours and grades to calculate your GPA.
+            </p>
+        </section>
+
+        <section class="gpa-container">
+
+            <div class="gpa-form">
+                <h2>Add Course</h2>
+
+                <input
+                    type="text"
+                    id="courseName"
+                    placeholder="Enter course name"
+                >
+
+                <input
+                    type="number"
+                    id="creditHours"
+                    placeholder="Credit hours"
+                    min="1"
+                    max="6"
+                >
+
+                <select id="gradeInput">
+                    <option value="">Select Grade</option>
+                    <option value="4.0">A</option>
+                    <option value="3.7">A-</option>
+                    <option value="3.3">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.7">B-</option>
+                    <option value="2.3">C+</option>
+                    <option value="2.0">C</option>
+                    <option value="1.7">C-</option>
+                    <option value="1.0">D</option>
+                    <option value="0.0">F</option>
+                </select>
+
+                <button id="addCourseButton">
+                    Add Course
+                </button>
+            </div>
+
+            <div class="gpa-result-section">
+
+                <div class="gpa-result-card">
+                    <p>Your GPA</p>
+                    <h2 id="gpaResult">0.00</h2>
+                </div>
+
+                <h2>Added Courses</h2>
+
+                <div id="courseList">
+                    <p class="empty-message">No courses added yet.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/gpa.js"></script>
+
+</body>
+
+</html>

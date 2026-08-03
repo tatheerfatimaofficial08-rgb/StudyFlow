@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasks - StudyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">StudyFlow</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notes.html">Notes</a>
+           <a href="gpa.html">GPA</a>
+            <a href="about.html">About</a>
+        </nav>
+        <button id="themeButton" class="theme-button">
+    Dark Mode
+</button>
+    </header>
+
+    <main class="tasks-page">
+
+        <section class="tasks-heading">
+            <p class="small-heading">TASK PLANNER</p>
+            <h1>Manage Your Tasks</h1>
+            <p>Add your assignments, study goals and important deadlines.</p>
+        </section>
+
+        <section class="task-container">
+
+            <div class="task-form">
+                <h2>Add New Task</h2>
+
+                <input type="text" id="taskInput" placeholder="Enter task name">
+
+                <select id="subjectInput">
+                    <option value="">Select Subject</option>
+                    <option value="Programming">Programming</option>
+                    <option value="ICT">ICT</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="English">English</option>
+                </select>
+
+                <input type="date" id="dateInput">
+
+                <button id="addTaskButton">Add Task</button>
+            </div>
+
+            <div class="task-list-section">
+                <h2>Your Tasks</h2>
+
+                <div id="taskList">
+                    <p class="empty-message">No tasks added yet.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/tasks.js"></script>
+
+</body>
+
+</html>

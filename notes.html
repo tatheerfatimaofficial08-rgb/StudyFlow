@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes - StudyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">StudyFlow</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notes.html">Notes</a>
+            <a href="gpa.html">GPA</a>
+            <a href="about.html">About</a>
+        </nav>
+        <button id="themeButton" class="theme-button">
+    Dark Mode
+</button>
+    </header>
+
+    <main class="notes-page">
+
+        <section class="notes-heading">
+            <p class="small-heading">DIGITAL NOTEBOOK</p>
+
+            <h1>Write and Save Notes</h1>
+
+            <p>
+                Keep your lecture notes and study ideas in one place.
+            </p>
+        </section>
+
+        <section class="notes-container">
+
+            <div class="notes-editor">
+
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Enter note title"
+                >
+
+                <textarea
+                    id="noteContent"
+                    placeholder="Write your note here..."
+                ></textarea>
+
+                <div class="notes-info">
+                    <span id="wordCount">Words: 0</span>
+                </div>
+
+                <div class="notes-buttons">
+                    <button id="saveNoteButton">Save Note</button>
+                    <button id="downloadNoteButton">Download</button>
+                </div>
+
+            </div>
+
+            <div class="saved-notes-section">
+
+                <h2>Saved Notes</h2>
+
+                <div id="savedNotes">
+                    <p class="empty-message">No notes saved yet.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/notes.js"></script>
+
+</body>
+
+</html>

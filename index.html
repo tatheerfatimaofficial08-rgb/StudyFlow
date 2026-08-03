@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">StudyFlow</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notes.html">Notes</a>
+            <a href="gpa.html">GPA</a>
+            <a href="about.html">About</a>
+        </nav>
+        <button id="themeButton" class="theme-button">
+    Dark Mode
+</button>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <p class="small-heading">SMART STUDENT PLANNER</p>
+
+            <h1>Plan your studies.<br>Stay focused.</h1>
+
+            <p class="hero-description">
+                Manage your tasks, classes, notes and study time in one simple place.
+            </p>
+
+            <a href="tasks.html" class="start-button">Start Planning</a>
+        </div>
+
+        <div class="hero-card">
+            <h2>Today's Plan</h2>
+
+            <div class="plan-item">
+                <span>Programming Lecture</span>
+                <span>9:00 AM</span>
+            </div>
+
+            <div class="plan-item">
+                <span>Complete Assignment</span>
+                <span>12:00 PM</span>
+            </div>
+
+            <div class="plan-item">
+                <span>Revision Session</span>
+                <span>5:00 PM</span>
+            </div>
+        </div>
+        
+    </main>
+        </main>
+
+    <section class="pomodoro-section">
+
+        <div class="pomodoro-card">
+
+            <p class="small-heading">FOCUS TIMER</p>
+
+            <h2>Pomodoro Study Session</h2>
+
+            <div id="timerDisplay" class="timer-display">
+                25:00
+            </div>
+
+            <div class="timer-buttons">
+                <button id="startTimerButton">Start</button>
+                <button id="pauseTimerButton">Pause</button>
+                <button id="resetTimerButton">Reset</button>
+            </div>
+
+            <p class="timer-message">
+                Focus for 25 minutes, then take a short break.
+            </p>
+
+        </div>
+
+    </section>
+<!-- js file connections timers darkmode and light modes  -->
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+
+
+</html>
